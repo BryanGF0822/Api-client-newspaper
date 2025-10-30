@@ -11,7 +11,7 @@ import SwiftUI
 struct RetoNewsPaperAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArticleListView()
         }
     }
 }
