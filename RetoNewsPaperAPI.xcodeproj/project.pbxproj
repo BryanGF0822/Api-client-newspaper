@@ -6,19 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C4816962F0C9B79000EACFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4816912F0C9B79000EACFC /* Assets.xcassets */; };
+		1C4816972F0C9B79000EACFC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168B2F0C9B79000EACFC /* Article.swift */; };
+		1C4816982F0C9B79000EACFC /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168C2F0C9B79000EACFC /* ArticleDetailView.swift */; };
+		1C4816992F0C9B79000EACFC /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168D2F0C9B79000EACFC /* ArticleListView.swift */; };
+		1C48169A2F0C9B79000EACFC /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168E2F0C9B79000EACFC /* ArticleService.swift */; };
+		1C48169B2F0C9B79000EACFC /* ArticleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168F2F0C9B79000EACFC /* ArticleServiceProtocol.swift */; };
+		1C48169C2F0C9B79000EACFC /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816902F0C9B79000EACFC /* ArticleViewModel.swift */; };
+		1C48169D2F0C9B79000EACFC /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816922F0C9B79000EACFC /* Mocks.swift */; };
+		1C48169E2F0C9B79000EACFC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816932F0C9B79000EACFC /* NetworkError.swift */; };
+		1C48169F2F0C9B79000EACFC /* RetoNewsPaperAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816942F0C9B79000EACFC /* RetoNewsPaperAPIApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C4816D92F0CB3F6000EACFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CA9BBA92E8E3B0C008D5BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CA9BBB02E8E3B0C008D5BDA;
+			remoteInfo = RetoNewsPaperAPI;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1C48168B2F0C9B79000EACFC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		1C48168C2F0C9B79000EACFC /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		1C48168D2F0C9B79000EACFC /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		1C48168E2F0C9B79000EACFC /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		1C48168F2F0C9B79000EACFC /* ArticleServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceProtocol.swift; sourceTree = "<group>"; };
+		1C4816902F0C9B79000EACFC /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		1C4816912F0C9B79000EACFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C4816922F0C9B79000EACFC /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		1C4816932F0C9B79000EACFC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1C4816942F0C9B79000EACFC /* RetoNewsPaperAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetoNewsPaperAPIApp.swift; sourceTree = "<group>"; };
+		1C4816D52F0CB3F6000EACFC /* RetoNewsPaperAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetoNewsPaperAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA9BBB12E8E3B0C008D5BDA /* RetoNewsPaperAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetoNewsPaperAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1CA9BBB32E8E3B0C008D5BDA /* RetoNewsPaperAPI */ = {
+		1C4816D62F0CB3F6000EACFC /* RetoNewsPaperAPITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RetoNewsPaperAPI;
+			path = RetoNewsPaperAPITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C4816D22F0CB3F6000EACFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1CA9BBAE2E8E3B0C008D5BDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +70,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C4816952F0C9B79000EACFC /* RetoNewsPaperAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816A02F0C9B83000EACFC /* App */,
+				1C4816A12F0C9C39000EACFC /* Models */,
+				1C4816A22F0C9C42000EACFC /* Networking */,
+				1C4816A32F0C9C52000EACFC /* ViewModels */,
+				1C4816A42F0C9C5E000EACFC /* Views */,
+				1C4816A52F0C9C67000EACFC /* Mocks */,
+				1C4816A62F0C9C70000EACFC /* Resources */,
+			);
+			path = RetoNewsPaperAPI;
+			sourceTree = "<group>";
+		};
+		1C4816A02F0C9B83000EACFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816942F0C9B79000EACFC /* RetoNewsPaperAPIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1C4816A12F0C9C39000EACFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C48168B2F0C9B79000EACFC /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C4816A22F0C9C42000EACFC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1C48168E2F0C9B79000EACFC /* ArticleService.swift */,
+				1C48168F2F0C9B79000EACFC /* ArticleServiceProtocol.swift */,
+				1C4816932F0C9B79000EACFC /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1C4816A32F0C9C52000EACFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816902F0C9B79000EACFC /* ArticleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1C4816A42F0C9C5E000EACFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816A82F0C9CB5000EACFC /* ArticleDetail */,
+				1C4816A72F0C9CA9000EACFC /* ArticleList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C4816A52F0C9C67000EACFC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816922F0C9B79000EACFC /* Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		1C4816A62F0C9C70000EACFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C4816912F0C9B79000EACFC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C4816A72F0C9CA9000EACFC /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				1C48168D2F0C9B79000EACFC /* ArticleListView.swift */,
+			);
+			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		1C4816A82F0C9CB5000EACFC /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1C48168C2F0C9B79000EACFC /* ArticleDetailView.swift */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
 		1CA9BBA82E8E3B0C008D5BDA = {
 			isa = PBXGroup;
 			children = (
-				1CA9BBB32E8E3B0C008D5BDA /* RetoNewsPaperAPI */,
+				1C4816952F0C9B79000EACFC /* RetoNewsPaperAPI */,
+				1C4816D62F0CB3F6000EACFC /* RetoNewsPaperAPITests */,
 				1CA9BBB22E8E3B0C008D5BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA9BBB12E8E3B0C008D5BDA /* RetoNewsPaperAPI.app */,
+				1C4816D52F0CB3F6000EACFC /* RetoNewsPaperAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +180,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C4816D42F0CB3F6000EACFC /* RetoNewsPaperAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4816DB2F0CB3F6000EACFC /* Build configuration list for PBXNativeTarget "RetoNewsPaperAPITests" */;
+			buildPhases = (
+				1C4816D12F0CB3F6000EACFC /* Sources */,
+				1C4816D22F0CB3F6000EACFC /* Frameworks */,
+				1C4816D32F0CB3F6000EACFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C4816DA2F0CB3F6000EACFC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1C4816D62F0CB3F6000EACFC /* RetoNewsPaperAPITests */,
+			);
+			name = RetoNewsPaperAPITests;
+			packageProductDependencies = (
+			);
+			productName = RetoNewsPaperAPITests;
+			productReference = 1C4816D52F0CB3F6000EACFC /* RetoNewsPaperAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1CA9BBB02E8E3B0C008D5BDA /* RetoNewsPaperAPI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CA9BBBC2E8E3B10008D5BDA /* Build configuration list for PBXNativeTarget "RetoNewsPaperAPI" */;
@@ -59,9 +214,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1CA9BBB32E8E3B0C008D5BDA /* RetoNewsPaperAPI */,
 			);
 			name = RetoNewsPaperAPI;
 			packageProductDependencies = (
@@ -77,9 +229,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					1C4816D42F0CB3F6000EACFC = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 1CA9BBB02E8E3B0C008D5BDA;
+					};
 					1CA9BBB02E8E3B0C008D5BDA = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -100,31 +256,108 @@
 			projectRoot = "";
 			targets = (
 				1CA9BBB02E8E3B0C008D5BDA /* RetoNewsPaperAPI */,
+				1C4816D42F0CB3F6000EACFC /* RetoNewsPaperAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CA9BBAF2E8E3B0C008D5BDA /* Resources */ = {
+		1C4816D32F0CB3F6000EACFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CA9BBAF2E8E3B0C008D5BDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4816962F0C9B79000EACFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CA9BBAD2E8E3B0C008D5BDA /* Sources */ = {
+		1C4816D12F0CB3F6000EACFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CA9BBAD2E8E3B0C008D5BDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4816972F0C9B79000EACFC /* Article.swift in Sources */,
+				1C4816982F0C9B79000EACFC /* ArticleDetailView.swift in Sources */,
+				1C4816992F0C9B79000EACFC /* ArticleListView.swift in Sources */,
+				1C48169A2F0C9B79000EACFC /* ArticleService.swift in Sources */,
+				1C48169B2F0C9B79000EACFC /* ArticleServiceProtocol.swift in Sources */,
+				1C48169C2F0C9B79000EACFC /* ArticleViewModel.swift in Sources */,
+				1C48169D2F0C9B79000EACFC /* Mocks.swift in Sources */,
+				1C48169E2F0C9B79000EACFC /* NetworkError.swift in Sources */,
+				1C48169F2F0C9B79000EACFC /* RetoNewsPaperAPIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1C4816DA2F0CB3F6000EACFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CA9BBB02E8E3B0C008D5BDA /* RetoNewsPaperAPI */;
+			targetProxy = 1C4816D92F0CB3F6000EACFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1C4816DC2F0CB3F6000EACFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9SXL7PN4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XanderDev.RetoNewsPaperAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetoNewsPaperAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetoNewsPaperAPI";
+			};
+			name = Debug;
+		};
+		1C4816DD2F0CB3F6000EACFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M9SXL7PN4T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XanderDev.RetoNewsPaperAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetoNewsPaperAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetoNewsPaperAPI";
+			};
+			name = Release;
+		};
 		1CA9BBBA2E8E3B10008D5BDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +546,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C4816DB2F0CB3F6000EACFC /* Build configuration list for PBXNativeTarget "RetoNewsPaperAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4816DC2F0CB3F6000EACFC /* Debug */,
+				1C4816DD2F0CB3F6000EACFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1CA9BBAC2E8E3B0C008D5BDA /* Build configuration list for PBXProject "RetoNewsPaperAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

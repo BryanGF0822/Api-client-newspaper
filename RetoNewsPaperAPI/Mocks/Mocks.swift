@@ -2,11 +2,12 @@
 //  Mocks.swift
 //  RetoNewsPaperAPI
 //
-//  Created by Bryan Alexander Guapacha Florez on 29/10/25.
+//  Created by Bryan Alexander Guapacha Florez on 5/01/26.
 //
 
 import Foundation
 
+/// Datos de ejemplo para previews y prototipos de UI.
 extension Article {
     static let mockArticle = Article(
         id: 1,

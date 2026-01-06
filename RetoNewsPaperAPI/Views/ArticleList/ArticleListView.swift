@@ -2,40 +2,46 @@
 //  ArticleListView.swift
 //  RetoNewsPaperAPI
 //
-//  Created by Bryan Alexander Guapacha Florez on 1/10/25.
+//  Created by Bryan Alexander Guapacha Florez on 5/01/26.
 //
 
 import SwiftUI
 
+/// Vista raiz: lista articulos, maneja estados y navega al detalle.
 struct ArticleListView: View {
-    
-    @StateObject private var viewModel = ArticleViewModel()
-    
+
+    @StateObject private var viewModel = ArticleViewModel(service: ArticleService())
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Group {
                 if viewModel.isLoading {
-                    ProgressView("Cargando noticias...")
+                    ProgressView("Loading News...")
                 } else if let error = viewModel.errorMessage {
-                    Text(error).foregroundStyle(Color.red)
+                    Text(error)
+                        .foregroundStyle(.red)
                 } else {
                     List(viewModel.articles) { article in
-                        NavigationLink(destination: ArticleDetailView(article: article)) {
+                        NavigationLink(value: article) {
                             VStack(alignment: .leading) {
                                 Text(article.title)
                                     .font(.headline)
-                                Text(article.newsSite)
+
+                                Text("From: \(article.newsSite)")
                                     .font(.subheadline)
-                                    .foregroundStyle(Color.gray)
+                                    .foregroundStyle(.secondary)
                             }
                         }
                     }
                 }
             }
+            .navigationTitle("Science News")
             .task {
                 await viewModel.loadArticles()
             }
-            .navigationTitle("Noticias Espaciales")
+            .navigationDestination(for: Article.self) { article in
+                ArticleDetailView(article: article)
+            }
         }
     }
 }
