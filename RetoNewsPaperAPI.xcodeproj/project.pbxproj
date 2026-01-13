@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1CA7252F0DC9670065E12A /* MockArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1CA7242F0DC9670065E12A /* MockArticleService.swift */; };
 		1C4816962F0C9B79000EACFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4816912F0C9B79000EACFC /* Assets.xcassets */; };
 		1C4816972F0C9B79000EACFC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168B2F0C9B79000EACFC /* Article.swift */; };
 		1C4816982F0C9B79000EACFC /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48168C2F0C9B79000EACFC /* ArticleDetailView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1CA7242F0DC9670065E12A /* MockArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleService.swift; sourceTree = "<group>"; };
 		1C48168B2F0C9B79000EACFC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		1C48168C2F0C9B79000EACFC /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
 		1C48168D2F0C9B79000EACFC /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		1C4816A52F0C9C67000EACFC /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				1C1CA7242F0DC9670065E12A /* MockArticleService.swift */,
 				1C4816922F0C9B79000EACFC /* Mocks.swift */,
 			);
 			path = Mocks;
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1CA7252F0DC9670065E12A /* MockArticleService.swift in Sources */,
 				1C4816972F0C9B79000EACFC /* Article.swift in Sources */,
 				1C4816982F0C9B79000EACFC /* ArticleDetailView.swift in Sources */,
 				1C4816992F0C9B79000EACFC /* ArticleListView.swift in Sources */,

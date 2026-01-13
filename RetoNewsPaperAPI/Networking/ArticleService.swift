@@ -14,14 +14,14 @@ class ArticleService: ArticleServiceProtocol {
 
     /// Realiza la solicitud HTTP y decodifica la respuesta.
     func fetchArticles() async throws -> [Article] {
-
+        print(Thread.current)
         guard let url = URL(string: baseURL) else {
             throw NetworkError.badURL
         }
 
         do {
             let (data, response) = try await URLSession.shared.data(from: url)
-
+            print(Thread.current)
             guard let httpResponse = response as? HTTPURLResponse,
                   200..<300 ~= httpResponse.statusCode else {
                 throw NetworkError.invalidResponse

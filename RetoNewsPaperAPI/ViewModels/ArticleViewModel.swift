@@ -8,7 +8,7 @@
 import Foundation
 internal import Combine
 
-@MainActor
+
 /// Maneja el estado de la lista y coordina la carga de articulos.
 class ArticleViewModel: ObservableObject {
     
@@ -24,7 +24,7 @@ class ArticleViewModel: ObservableObject {
     
     /// Carga articulos y actualiza el estado de la vista.
     func loadArticles() async {
-        
+        //print(Thread.current)
         isLoading = true
         errorMessage = nil
         

@@ -10,7 +10,11 @@ import SwiftUI
 /// Vista raiz: lista articulos, maneja estados y navega al detalle.
 struct ArticleListView: View {
 
-    @StateObject private var viewModel = ArticleViewModel(service: ArticleService())
+    @StateObject private var viewModel: ArticleViewModel
+    
+    init(viewModel: ArticleViewModel = ArticleViewModel(service: ArticleService())) {
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
 
     var body: some View {
         NavigationStack {
@@ -21,7 +25,7 @@ struct ArticleListView: View {
                     Text(error)
                         .foregroundStyle(.red)
                 } else {
-                    List(viewModel.articles) { article in
+                    List(viewModel.articles, id: \.self) { article in
                         NavigationLink(value: article) {
                             VStack(alignment: .leading) {
                                 Text(article.title)
@@ -37,6 +41,7 @@ struct ArticleListView: View {
             }
             .navigationTitle("Science News")
             .task {
+                
                 await viewModel.loadArticles()
             }
             .navigationDestination(for: Article.self) { article in
@@ -47,5 +52,5 @@ struct ArticleListView: View {
 }
 
 #Preview {
-    ArticleListView()
+    ArticleListView(viewModel: ArticleViewModel(service: MockArticleService()))
 }

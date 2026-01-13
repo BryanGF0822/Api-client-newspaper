@@ -15,7 +15,7 @@ struct ArticlesResponse: Codable {
 }
 
 /// Modelo de articulo utilizado en la UI.
-struct Article: Codable, Identifiable, Hashable {
+struct Article: Codable, Hashable {
     let id: Int
     let title: String
     let url: String
@@ -32,3 +32,4 @@ struct Article: Codable, Identifiable, Hashable {
         case publishedAt = "published_at"
     }
 }
+
