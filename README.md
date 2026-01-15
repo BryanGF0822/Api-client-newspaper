@@ -7,6 +7,10 @@ RetoNewsPaperAPI is a simple iOS app built with SwiftUI that fetches science new
 - Read article details with images
 - Handles loading and basic error states
 
+## Video Demo
+https://github.com/user-attachments/assets/45b22c16-806b-4e33-8cd2-51a15ad5203d
+
+
 ## Tech Stack
 - SwiftUI
 - Combine
